@@ -1,5 +1,3 @@
-package practicum;
-
 import java.util.ArrayList;
 
 public class Persoon {
