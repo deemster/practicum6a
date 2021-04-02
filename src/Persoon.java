@@ -40,7 +40,7 @@ public class Persoon {
     }
 
     public String toString(){
-        String alles = naam + " heeft een budget van " + String.format("%.2f", getBudget()) + " en bezit de volgende games:" ;
+        String alles = naam + " heeft een budget van €" + String.format("%.2f", getBudget()) + " en bezit de volgende games:" ;
         for (Game g : mijnGames){
             alles += "\n" + g.toString();
         }

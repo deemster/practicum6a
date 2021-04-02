@@ -39,6 +39,6 @@ public class Game {
     }
     public String toString(){
 
-        return getNaam() + ", uitgegeven in " + releaseJaar + "; nieuwprijs:  €" + nieuwprijs + " nu voor: €" + String.format("%.2f", huidigeWaarde());
+        return getNaam() + ", uitgegeven in " + releaseJaar + "; nieuwprijs: €" + String.format("%.2f", nieuwprijs) + " nu voor: €" + String.format("%.2f", huidigeWaarde());
     }
 }
