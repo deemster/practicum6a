@@ -1,3 +1,5 @@
+package practicum;
+
 import java.util.ArrayList;
 
 public class Persoon {
@@ -37,6 +39,25 @@ public class Persoon {
 
 
         return iets;
+    }
+
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> games){
+        ArrayList<Game> gamesNietInBezit = new ArrayList<>();
+        boolean bezit;
+        for (Game game : games){
+            bezit = false;
+            for(Game persoonGame : this.mijnGames){
+                if (persoonGame.equals(game)) {
+                    bezit = true;
+                    break;
+                }
+            }
+
+            if(!bezit){
+                gamesNietInBezit.add(game);
+            }
+        }
+        return gamesNietInBezit;
     }
 
     public String toString(){
